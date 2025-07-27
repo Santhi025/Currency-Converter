@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2 style="font-size: 2.5rem;">Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p style="font-size: 1.5rem;">Enter Amount</p>
+                <input type="text">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p style="font-size: 1.3rem;">From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                     <select name="from" size="1">
+                     </select>   
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p style="font-size: 1.3rem;">To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                     <select name="to" >
+                     </select>   
+                    </div>
+                </div>
+            </div>
+            <button>Get Exchange Rate</button>
+            <div class="loadcontainer">
+                <div class="spin"></div>
+                <div class="fetch">
+                Fetching rate...</div>
+            </div>
+             <div class="msg"></div>
+        </form>
+
+    </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+    <script src="symbol.js"></script>
+
+</body>
+</html>
